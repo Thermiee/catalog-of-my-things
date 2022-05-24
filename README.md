@@ -2,14 +2,17 @@
 
 # Project Name
 
-> Description the project.
+> > In this project, you can create items (games, music albums, books) and store them in a database.
+This is Ruby capstone project for Microverse program.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
+- Gem
+- Terminal
+- PostgresSQL
+- RSpec
 
 ## Live Demo (if available)
 
@@ -40,17 +43,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Tobin Chilongo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Tobinchilongo](https://github.com/Tobinchilongo)
+- Twitter: [@Tobin_Official](https://twitter.com/Tobin_Official)
+- LinkedIn: [@Tobinchilongo](https://www.linkedin.com/in/tobin-chilongo-a6736415a/)
 
-👤 **Author2**
+👤 **Emmanuel Jolugbo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Thermiee](https://github.com/Thermiee)
+- LinkedIn: [Emmanuel](https://www.linkedin.com/in/emmanuel-jolugbo/)
+- Email: navyblack16@yahoo.com
 
 ## 🤝 Contributing
 
