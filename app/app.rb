@@ -1,11 +1,11 @@
+require_relative './book'
+
 class App
-  attr_accessor :books, :games, :labels, :authors
+  attr_accessor :books, :labels
 
   def initialize
     @books = []
-    @games = []
     @labels = []
-    @authors = []
   end
 
   def welcome
