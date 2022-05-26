@@ -25,15 +25,15 @@ module Console
       selected = gets.chomp.to_i
       case selected
       when 1
-        puts 'List all books'
+        list_books
       when 2
         puts 'list_all_games'
       when 3
-        puts 'list_labels'
+        list_labels
       when 4
         puts 'list_all_authors'
       when 5
-        puts 'add_book'
+        add_book
       when 6
         puts 'add_game'
       when 7
