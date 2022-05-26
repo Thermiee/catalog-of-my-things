@@ -25,7 +25,6 @@ module Booklist
     cover_state = gets.chomp
     label = handle_label
     book = Book.new(publisher, cover_state, name, published_date)
-    @labels << label unless @labels.include?(label)
     @books << book
     puts 'Book added successfully'
   end
