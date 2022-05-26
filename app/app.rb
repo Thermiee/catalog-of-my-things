@@ -18,7 +18,7 @@ class App
   end
 
   def run
-    puts 'Hi!! Welcome to our Ruby Capstone Project'
+    puts 'Hi!! Welcome to My Category App'
     @books = populate_books
     @labels = populate_labels
   end
