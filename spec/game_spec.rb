@@ -1,5 +1,5 @@
-require './game-and-author\author'
-require './game-and-author\game'
+require './game-and-author/author'
+require './game-and-author/game'
 require './app/item'
 
 describe Game do
