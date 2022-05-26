@@ -1,11 +1,18 @@
 require_relative './book'
+require './author'
+require './item'
+require './game'
 
 class App
-  attr_accessor :books, :labels
+  include GameList
+  attr_accessor :books, :labels, :authors, :items, :games
 
   def initialize
     @books = []
     @labels = []
+    @authors = []
+    @items = []
+    @games = []
   end
 
   def welcome
