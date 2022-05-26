@@ -1,7 +1,7 @@
 require_relative './book'
 require './author'
-require './item'
 require './game'
+require './game_list'
 
 class App
   include GameList
@@ -11,7 +11,6 @@ class App
     @books = []
     @labels = []
     @authors = []
-    @items = []
     @games = []
   end
 
