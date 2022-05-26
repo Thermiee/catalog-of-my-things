@@ -7,4 +7,9 @@ class Author
     @id = id
     @items = []
   end
+
+  def add_item(item)
+    item.push(item)
+    item.label = self
+  end
 end
