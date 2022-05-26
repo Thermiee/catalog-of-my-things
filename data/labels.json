@@ -18,5 +18,9 @@
   {
     "title" : "gift",
     "color" : "black"
+  },
+  {
+    "title" : "New",
+    "color" : "Purple"
   }
 ]
