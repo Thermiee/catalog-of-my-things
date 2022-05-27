@@ -1,25 +1,16 @@
-require_relative './game_and_author/author'
-require_relative './game-and-author/game'
+require_relative '../game-and-author/game'
+require_relative '../data/games_crud'
 
-module Gamelist
-  def list_all_games
+module GamesList
+  def list_games
     if @games.empty?
-      puts 'You don\'t have any Games.'
+      puts 'You don\'t have any games.'
     else
       @games.each_with_index do |game, index|
-        puts "#{index} name: #{game.name}, publisher: #{game.publisher}, publish_date:#{game.published_date}"
-        puts ''
-      end
-    end
-    puts ''
-  end
-
-  def list_all_authors
-    if @authors.empty?
-      puts 'You don\'t have any Authors.'
-    else
-      @authors.each_with_index do |author, index|
-        puts "#{index} name: #{author.name}, publisher: #{author.publisher}, publish_date:#{author.published_date}"
+        puts "#{index} multiplayer: #{game.multiplayer},
+          last_played_at: #{game.last_played_at},
+          published_date:#{game.published_date},
+          id: #{game.id}"
         puts ''
       end
     end
@@ -27,22 +18,17 @@ module Gamelist
   end
 
   def add_game
-    print 'Title: '
-    name = gets.chomp
-    print 'publisher: '
-    publisher = gets.chomp
-    print 'date of publish: '
+    print 'Is it a multiplayer game'
+    multiplayer = gets.chomp
+    print 'Publish date '
     published_date = gets.chomp
-    print 'cover state: '
-    cover_state = gets.chomp
-    stored_games = fetch_data('games')
-    handle_author
-    game = Game.new(publisher, cover_state, name, published_date)
-    @games << game
-    game_data = { name: name, publisher: publisher, published_date: published_date,
-                  cover_state: cover_state }
-    stored_games.push(game_data)
-    update_data('games', stored_games)
-    puts 'Game added successfully'
+    print 'Last_played_date'
+    last_played_at = gets.chomp
+
+    games_data = Game.new(multiplayer, published_date, last_played_at)
+    @games.push(games_data)
+    save_game(@games)
+
+    puts 'Game saved successfully!'
   end
 end

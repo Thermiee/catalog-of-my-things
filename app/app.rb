@@ -3,9 +3,9 @@ require_relative '../data/book_crud'
 require_relative '../data/label_crud'
 require_relative './book_list'
 require_relative './book'
-require_relative './game-and-author/game'
+require_relative '../game-and-author/game'
 require_relative './game_list'
-require_relative '../data/game_crud'
+require_relative '../data/games_crud'
 require_relative '../data/author_crud'
 
 class App
@@ -13,7 +13,7 @@ class App
 
   include Console
   include Booklist
-  include Gamelist
+  include GamesList
 
   def initialize
     @books = []
