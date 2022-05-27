@@ -22,6 +22,6 @@ end
 
 def authors
   fetch_data('authors').map do |author|
-    Author.new(author['first_name'], author['last_name'], author['id'])
+    Author.new(author['name'], author['publisher'], author['published_date'])
   end
 end

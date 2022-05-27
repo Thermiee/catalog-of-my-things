@@ -27,15 +27,15 @@ module Console
       when 1
         list_books
       when 2
-        puts 'list_all_games'
+        list_all_games
       when 3
         list_labels
       when 4
-        puts 'list_all_authors'
+        list_all_authors
       when 5
         add_book
       when 6
-        puts 'add_game'
+        add_game
       when 7
         puts 'Thank you for using our app!'
         break
