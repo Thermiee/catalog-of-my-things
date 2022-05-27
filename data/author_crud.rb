@@ -20,7 +20,7 @@ def update_data(file, data)
   File.write("./data/#{file}.json", json_data)
 end
 
-def authors
+def populate_authors
   fetch_data('authors').map do |author|
     Author.new(author['name'], author['publisher'], author['published_date'])
   end

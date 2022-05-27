@@ -20,7 +20,7 @@ def update_data(file, data)
   File.write("./data/#{file}.json", json_data)
 end
 
-def games
+def populate_games
   fetch_data('games').map do |game|
     Game.new(game['name'], game['published'], game['multiplayer'], game['last_played'])
   end

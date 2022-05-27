@@ -1,7 +1,7 @@
-require_relative './author'
-require_relative './game'
+require_relative './game_and_author/author'
+require_relative './game-and-author/game'
 
-module GameList
+module Gamelist
   def list_all_games
     if @games.empty?
       puts 'You don\'t have any Games.'
