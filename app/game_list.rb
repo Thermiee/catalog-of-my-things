@@ -17,6 +17,19 @@ module GamesList
     puts ''
   end
 
+  def list_authors
+    if @authors.empty?
+      puts 'You don\'t have any authors.'
+    else
+      @authors.each_with_index do |author, index|
+        puts "#{index} name: #{author.name},
+          id: #{author.id}"
+        puts ''
+      end
+    end
+    puts ''
+  end
+
   def add_game
     print 'Is it a multiplayer game'
     multiplayer = gets.chomp
@@ -26,9 +39,10 @@ module GamesList
     last_played_at = gets.chomp
 
     games_data = Game.new(multiplayer, published_date, last_played_at)
-    @games.push(games_data)
-    save_game(@games)
-
+    @games << games_data
+    stored_games = fetch_data('games')
+    stored_games.push(games_data)
+    update_data('games', stored_games)
     puts 'Game saved successfully!'
   end
 end

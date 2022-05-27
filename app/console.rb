@@ -27,11 +27,11 @@ module Console
       when 1
         list_books
       when 2
-        list_all_games
+        list_games
       when 3
         list_labels
       when 4
-        list_all_authors
+        list_authors
       when 5
         add_book
       when 6
