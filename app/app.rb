@@ -4,7 +4,7 @@ require_relative '../data/label_crud'
 require_relative './book_list'
 require_relative './book'
 require_relative '../game-and-author/game'
-require_relative './game_list'
+require_relative '../game-and-author/game_list'
 require_relative '../data/games_crud'
 require_relative '../data/author_crud'
 
