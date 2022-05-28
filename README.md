@@ -2,7 +2,7 @@
 
 # Project Name
 
->In this project, you can create items (games and books) and store them in a database.
+>In this project, you can create items (games, music albums, books) and store them in a database.
 This is Ruby capstone project for Microverse program.
 
 
@@ -14,9 +14,9 @@ This is Ruby capstone project for Microverse program.
 - PostgresSQL
 - RSpec
 
-## Video Demo
+## Live Demo (if available)
 
-[Video Demo Link](https://drive.google.com/file/d/1Q9wd6bc0qt9-N83b4OvOnwoYHjfm0w4B/view?usp=sharing)
+[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
